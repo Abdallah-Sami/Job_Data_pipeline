@@ -1,22 +1,36 @@
-# Virtual environment
+# ---- Secrets: never commit these ----
+.env
+.env.*
+!.env.example
+*.env
+azure.env
+*secret*
+*credentials*
+*.pem
+*.key
+
+# ---- Data and scraper state (lives in ADLS, not in git) ----
+data/
+*.csv
+*.parquet
+checkpoint*.json
+*_check.json
+*_queue.json
+landing/
+archive/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
 .venv/
 venv/
 env/
 
-# Python cache
-__pycache__/
-*.py[cod]
-
-# Jupyter
+# ---- Jupyter / Databricks ----
 .ipynb_checkpoints/
 
-# Environment variables / secrets
-.env
-
-# IDE
+# ---- Editors / OS ----
 .vscode/
 .idea/
-
-# OS files
 .DS_Store
 Thumbs.db
