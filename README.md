@@ -1,8 +1,7 @@
 # Masar — Saudi Job-Market Data Pipeline
 
 
-https://jobpipelinedatalake.z1.web.core.windows.net
-
+https://abdallah-sami.github.io/Job_Data_pipeline/
 
 An end-to-end data engineering pipeline that collects Saudi job postings from three portals every day,
 cleans and models them in a Medallion lakehouse on Azure Databricks, and serves them through the
